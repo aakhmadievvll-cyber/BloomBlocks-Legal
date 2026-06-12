@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Store compliance notes — Bloom Blocks</title><link rel="stylesheet" href="styles.css"></head>
+<body><main><nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="store-compliance.html">Store compliance notes</a></nav><section class="card">
+<h1>Store compliance notes</h1>
+<p class="muted">This page is a practical checklist for filling store forms. It is not legal advice.</p>
+<h2>Minimum URLs usually needed</h2>
+<ul>
+<li><strong>Privacy Policy URL:</strong> <a href="privacy.html">privacy.html</a></li>
+<li><strong>Support URL:</strong> <a href="support.html">support.html</a></li>
+<li><strong>Terms URL:</strong> <a href="terms.html">terms.html</a> (often optional, recommended)</li>
+</ul>
+<h2>App Store Connect — App Privacy</h2>
+<p>Based on the current implementation, the App itself stores gameplay/settings locally and does not require login. However, because Yandex Mobile Ads is included, App Store privacy answers should account for third-party advertising SDK data. Review current Yandex SDK documentation before final submission.</p>
+<p>Likely categories to review:</p>
+<ul>
+<li>Identifiers: advertising/device identifiers may be used by ads.</li>
+<li>Usage data: ad interactions may be used by ads.</li>
+<li>Diagnostics: SDK/network diagnostics may be processed by third-party services.</li>
+<li>Data linked/tracking: answer according to the final Yandex SDK behavior, ATT consent flow, and Apple’s tracking definition.</li>
+</ul>
+<h2>Google Play Console — Data safety</h2>
+<p>For the App’s own code: no account, no user-provided personal data, local-only high score/settings. For Yandex Mobile Ads: disclose ad/analytics-related collection according to the SDK’s current Data Safety guidance.</p>
+<p>Likely items to review:</p>
+<ul>
+<li>Device or other IDs: advertising ID/device IDs for ads.</li>
+<li>App activity/ad interactions: ad delivery and measurement.</li>
+<li>Diagnostics: crash/diagnostic data if provided by SDK/platform.</li>
+<li>Purpose: advertising or marketing, analytics/measurement, fraud prevention/security.</li>
+</ul>
+<h2>RuStore</h2>
+<p>RuStore typically asks for a privacy policy URL when the app processes personal data or uses third-party SDKs. Use the Privacy Policy URL and ensure ad SDK disclosures are consistent with the submitted APK/AAB.</p>
+<h2>Current Yandex ad unit IDs</h2>
+<ul>
+<li>Android banner: <code>R-M-19426972-1</code></li>
+<li>Android rewarded: <code>R-M-19426972-2</code></li>
+<li>Android interstitial: <code>R-M-19426972-3</code></li>
+<li>iOS banner: <code>R-M-19424796-1</code></li>
+<li>iOS rewarded: <code>R-M-19424796-2</code></li>
+<li>iOS interstitial: <code>R-M-19424796-3</code></li>
+</ul>
+</section><footer>Bloom Blocks legal pages. Last updated: June 12, 2026.</footer></main></body></html>
